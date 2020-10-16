@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:elevation="0dp"
+            android:id="@+id/btn_phone_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorBlack"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:fontFamily="@font/product_sans_regular"
+            android:padding="16dp"
+            android:textAllCaps="false"
+            android:text="Sign in with Phone"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+        <Button
+            android:elevation="0dp"
+            android:id="@+id/btn_google_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@drawable/fui_ic_googleg_color_24dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:padding="16dp"
+            android:textAllCaps="false"
+            android:text="Sign in with Google"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
