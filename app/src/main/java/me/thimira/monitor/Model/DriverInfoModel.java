@@ -2,7 +2,7 @@ package me.thimira.monitor.Model;
 
 public class DriverInfoModel {
 
-    private String firstName, lastName, phoneNumber, avatar;
+    private String firstName, lastName, phoneNumber, avatar, route, vehicleNumber;
     private double rating;
 
     public DriverInfoModel(){
@@ -47,5 +47,21 @@ public class DriverInfoModel {
 
     public void setRating(double rating) {
         this.rating = rating;
+    }
+
+    public String getRoute() {
+        return route;
+    }
+
+    public void setRoute(String route) {
+        this.route = route;
+    }
+
+    public String getVehicleNumber() {
+        return vehicleNumber;
+    }
+
+    public void setVehicleNumber(String vehicleNumber) {
+        this.vehicleNumber = vehicleNumber;
     }
 }

@@ -5,20 +5,50 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
     tools:context=".SplashScreenActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textAlignment="center"
         android:gravity="center"
-        android:fontFamily="@font/product_sans_regular"
-        android:text="Loading..."
-        android:textColor="@color/colorWhite"
-        android:textSize="24sp"
-        />
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Loading..."
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Let's Track your vehicles"
+            android:textColor="#CCCCCC"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            />
+
+
+    </LinearLayout>
+
 
     <ProgressBar
+        android:visibility="gone"
         android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

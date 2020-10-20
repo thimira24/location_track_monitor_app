@@ -60,7 +60,7 @@
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
                         android:fontFamily="@font/product_sans_regular"
-                        android:hint="First name" />
+                        android:hint="Last name" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 

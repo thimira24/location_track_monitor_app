@@ -85,7 +85,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, IFireb
 
     // load drivers
     private double distance = 1.0;
-    private static final double LIMIT_RANGE = 10.0;
+    private static final double LIMIT_RANGE = 40.0; //km
     private Location previousLocation, currentLocation;
 
     private boolean firsTime = true;
@@ -216,7 +216,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, IFireb
 
                             @Override
                             public void onGeoQueryError(DatabaseError error) {
-                                if (distance <= LIMIT_RANGE) {
+                                if (distance >= LIMIT_RANGE) {
                                     distance++;
                                     loadAvailableDrivers();
                                 } else {
@@ -399,6 +399,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, IFireb
                     .title(Common.buildName(driverGeoModel.getDriverInfoModel().getFirstName(),
                             driverGeoModel.getDriverInfoModel().getLastName()))
                     .snippet(driverGeoModel.getDriverInfoModel().getPhoneNumber())
+                            .snippet(driverGeoModel.getDriverInfoModel().getRoute())
                     .icon(BitmapDescriptorFactory.fromResource(R.drawable.marker))));
 
         if (!TextUtils.isEmpty(cityName))
